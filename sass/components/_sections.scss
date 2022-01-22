@@ -1,0 +1,208 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    &.about {
+      padding-bottom: 0;
+    }
+  }
+  
+  .title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  .section-description {
+    display: flex;
+  
+    & > .section-list--item + .section-list--item {
+      margin-left: 30px;
+    }
+  }
+  
+  .section-list--item {
+    width: 270px;
+  
+    & .text {
+      margin-bottom: 0;
+    }
+  
+    & .title {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .story--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third-bg-color);
+    margin-bottom: var(--card-set-gap);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+  }
+  
+  .story__icon-picture {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .story__text {
+    color: var(--additional-text-color);
+    line-height: 1.7;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: var(--margin);
+  }
+  
+  .container-employment--picture.list {
+    display: flex;
+  }
+  
+  .container-employment--picture.list > .picture-work + .picture-work {
+    margin-left: 30px;
+  }
+  
+  .picture--employment {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+  
+  .block--employment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 70px;
+    width: 370px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  
+  .block-employment--information {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  
+  .team {
+    background-color: var(--third-bg-color);
+  }
+  
+  .picture-work--worker {
+    box-shadow: var(--background-color);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--title-text-color);
+  }
+  
+  .name-position {
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
+    text-align: center;
+  
+    & .name-position--title {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .list .name-position--title,
+  .name-position--title__text-name {
+    font-size: 16px;
+    line-height: 1.17;
+  }
+  
+  .name-position--title {
+    font-weight: 500;
+  }
+  
+  .name-position--title__text-name {
+    color: var(--additional-text-color);
+  }
+  
+  .social-icons {
+    display: inline-flex;
+  }
+  
+  .social--icons__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .social-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(---title-text-color);
+    margin-top: 16px;
+    transition: background-color var(--timing-function),
+      fill var(--timing-function);
+  
+    &:hover,
+    &:focus {
+      background-color: var(--accent-text-color);
+    }
+  }
+  
+  .social-icons-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+  
+    .social-icons-link:hover &,
+    .social-icons-link:focus & {
+      fill: var(--title-text-color);
+    }
+  }
+  
+  .customers-information {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  
+    & .customers-item--icon {
+      flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
+      width: calc((100% - 6 * var(--card-set-gap)) / 6);
+      margin-top: var(--card-set-gap);
+      margin-left: var(--card-set-gap);
+    }
+  }
+  
+  .customers-icon--logotype {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: border-color var(--timing-function), color var(--timing-function);
+  
+    &:hover,
+    &:focus {
+      border-color: var(--accent-text-color);
+      color: var(--accent-text-color);
+    }
+  }
+  
+  .customers--icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+  }
